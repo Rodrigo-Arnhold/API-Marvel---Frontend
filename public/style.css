@@ -1,0 +1,65 @@
+body {
+    width: 100%;
+    background: url(./imgs/marvelBackground.gif);
+    background-size: fill;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    background-color: red;
+}
+
+.page-link {
+    color: red;
+}
+
+.page-link:hover {
+    color: black;
+}
+
+.page-item.active .page-link {
+    background-color: red;
+    border-color: red;
+}
+
+.navbar-brand {
+    margin-right: 150px;
+    font-weight: 600;
+}
+
+.gridImg {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.gridImg .charImg {
+    display: flex;
+    height: 180px;
+    max-width: 220px;
+    overflow: hidden;
+    flex-grow: 1;
+    /*border-radius: 10px;*/
+    padding: 10px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.gridImg .charImg img {
+    height: 100%;
+    object-fit: fill;
+    width: 100%;
+    /*border-radius: 10px;*/
+    border: 4px solid rgb(185, 185, 185);
+}
+
+.pagination {
+    width: 900px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
